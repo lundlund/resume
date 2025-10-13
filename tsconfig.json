@@ -15,7 +15,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": ["vite/client"]           // ← gør TS bekendt med import.meta.glob
+    "types": ["vite/client", "node"]
   },
-  "include": ["src", "vite.config.ts"] // ← sørg for at src + vite config er med
+  "include": ["src", "vite.config.ts"]
 }
