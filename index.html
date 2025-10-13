@@ -15,6 +15,15 @@
   </head>
   <body class="bg-bg text-ink">
     <div id="root"></div>
+        <!-- Netlify form stub (skjult) -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <p><input type="text" name="name" /></p>
+      <p><input type="email" name="email" /></p>
+      <p><textarea name="message"></textarea></p>
+      <p class="hidden"><input name="bot-field" /></p>
+    </form>
+    <!-- /Netlify form stub -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
