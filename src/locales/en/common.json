@@ -4,7 +4,12 @@
     "projects": "Projects",
     "about": "About",
     "contact": "Contact",
-    "blog": "Blog"
+    "blog": "Blog",
+    "open": "Open menu",
+  "close": "Close menu",
+  "title": "Navigation",
+  "book": "Book a meeting",
+  "email": "Email"
   },
    "home": {
     "cta": {

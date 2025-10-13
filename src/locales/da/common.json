@@ -4,7 +4,12 @@
     "projects": "Projekter",
     "about": "Om mig",
     "contact": "Kontakt",
-    "blog": "Blog"
+    "blog": "Blog",
+    "open": "Åbn menu",
+  "close": "Luk menu",
+  "title": "Navigation",
+  "book": "Book et møde",
+  "email": "Email"
   },
     "hero": {
     "headline": "Skaber <hi1>værdi</hi1> på tværs af\n<emlite>kunstig</emlite>\nintelligens <emlite>og</emlite>\nægte <hi2>kunde</hi2>oplevelser."
