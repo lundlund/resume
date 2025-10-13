@@ -1,13 +1,12 @@
-import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Topbar } from '@/components/Topbar'
+import Topbar from '@/components/Topbar'
 import Home from '@/pages/Home'
 import Projects from '@/pages/Projects'
 import About from '@/pages/About'
 import Contact from '@/pages/Contact'
-import { Footer } from '@/components/Footer'
+import { Footer } from '@/components/Footer' // ← skift til { Footer } hvis din er named
 
-export default function App(){
+export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Topbar />
