@@ -39,7 +39,7 @@ export default function BrandCloud({
           className="
             mt-6 sm:mt-8
             grid place-items-center
-            grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4
+            grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4
             gap-x-8 gap-y-10 sm:gap-y-12
           "
         >
