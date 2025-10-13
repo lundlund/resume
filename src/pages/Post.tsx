@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { MdxWrapper } from "@/mdx";
-import { getLang, type Lang } from "@/lib/lang";
 
 type Meta = {
   title: string;
@@ -18,6 +18,7 @@ const en = import.meta.glob("../posts/en/*.mdx", { eager: true }) as Record<
   string, { default: React.ComponentType; meta?: Partial<Meta> }
 >;
 
+type Lang = "da" | "en";
 function pick(slug: string, lang: Lang) {
   const base = lang === "en" ? en : da;
   const fb = lang === "en" ? da : en;
@@ -41,7 +42,10 @@ function pick(slug: string, lang: Lang) {
 
 export default function Post() {
   const { slug } = useParams();
-  const lang = getLang();
+  // Hook = re-render på sprogskift
+  const { i18n } = useTranslation();
+  const lang: Lang = (i18n.resolvedLanguage || "da").toLowerCase().startsWith("en") ? "en" : "da";
+
   const data = slug ? pick(slug, lang) : null;
 
   if (!data || data.meta.draft) {
@@ -51,7 +55,7 @@ export default function Post() {
         <Link to="/blog" className="underline">← Tilbage til blog</Link>
       </main>
     );
-    }
+  }
 
   const { Component, meta } = data;
 

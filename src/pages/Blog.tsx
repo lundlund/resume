@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { getLang, type Lang } from "@/lib/lang";
+import { useTranslation } from "react-i18next";
 
 type Meta = {
   title: string;
@@ -17,11 +17,11 @@ const en = import.meta.glob("../posts/en/*.mdx", { eager: true }) as Record<
   string, { default: React.ComponentType; meta?: Partial<Meta> }
 >;
 
+type Lang = "da" | "en";
 function buildPosts(lang: Lang) {
   const base = lang === "en" ? en : da;
   const fallback = lang === "en" ? da : en;
 
-  // Saml alle slugs fra begge sprog
   const slugs = new Set(
     Object.keys(base).concat(Object.keys(fallback)).map((p) =>
       p.split("/").pop()!.replace(".mdx", "")
@@ -48,7 +48,11 @@ function buildPosts(lang: Lang) {
 }
 
 export default function Blog() {
-  const posts = buildPosts(getLang());
+  // Hook gør, at komponenten re-render når sproget skifter
+  const { i18n } = useTranslation();
+  const lang: Lang = (i18n.resolvedLanguage || "da").toLowerCase().startsWith("en") ? "en" : "da";
+
+  const posts = buildPosts(lang);
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
