@@ -6,6 +6,14 @@
     "contact": "Contact",
     "blog": "Blog"
   },
+   "home": {
+    "cta": {
+      "blog": "Read blog",
+      "contact": "Contact"
+    },
+    "heroAlt": "Portrait",
+    "brandSubtitle": "Throughout my career I’ve had the pleasure of working with these brands"
+  },
   "cta": {
     "getQuote": "Get a quote",
     "send": "Send",
@@ -16,6 +24,7 @@
   },
 
   "contact": {
+    "hero": "Creating <hi1>value</hi1> across\n<emlite>artificial</emlite>\nintelligence <emlite>and</emlite>\ntrue <hi3>customer</hi3> experience.",
     "title1": "Creating",
     "title2": "value",
     "title3": "across",

@@ -9,12 +9,21 @@
     "hero": {
     "headline": "Skaber <hi1>værdi</hi1> på tværs af\n<emlite>kunstig</emlite>\nintelligens <emlite>og</emlite>\nægte <hi2>kunde</hi2>oplevelser."
   },
+  "home": {
+    "cta": {
+      "blog": "Se blog",
+      "contact": "Kontakt"
+    },
+    "heroAlt": "Portræt",
+    "brandSubtitle": "Gennem min karriere har jeg haft fornøjelsen af at arbejde med disse brands"
+  },
   "cta": {
     "getQuote": "Få et tilbud",
     "send": "Send besked",
     "sending": "Sender…"
   },
   "contact": {
+    "hero": "Skaber <hi1>værdi</hi1> på tværs af\n<emlite>kunstig</emlite>\nintelligens <emlite>og</emlite>\nægte <hi3>kunde</hi3>oplevelser.",
     "title1": "Skaber",
     "title2": "værdi",
     "title3": "på tværs af",

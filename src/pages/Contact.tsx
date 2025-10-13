@@ -92,17 +92,19 @@ export default function Contact() {
               id="contact-hero"
               className="text-5xl sm:text-5xl md:text-5xl font-semibold leading-[1.05] tracking-tight whitespace-pre-line"
             >
-              <Trans
-                i18nKey="contact.hero"
-                components={{
-                  hi1: <Highlighter>{""}</Highlighter>,
-                  hi2: <Highlighter>{""}</Highlighter>,
-                  hi3: <Highlighter>{""}</Highlighter>,
-                }}
-                defaults={`Creating <hi1>value</hi1> across
-artificial <hi2>intelligence</hi2> and
+             <Trans
+  i18nKey="contact.hero"
+  components={{
+    hi1: <Highlighter>{""}</Highlighter>,
+    hi2: <Highlighter>{""}</Highlighter>,
+    hi3: <Highlighter>{""}</Highlighter>,
+    emlite: <span className="font-medium not-italic" />
+  }}
+  defaults={`Creating <hi1>value</hi1> across
+<emlite>artificial</emlite>
+intelligence <emlite>and</emlite>
 true <hi3>customer</hi3> experience.`}
-              />
+/>
             </h1>
 
             <p className="mt-6 text-lg text-neutral-700 leading-7">
