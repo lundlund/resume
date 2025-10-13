@@ -28,8 +28,8 @@ export default function Topbar() {
       <div className="mx-auto max-w-7xl h-16 flex items-center justify-between px-4">
 
         {/* Brand / logo */}
-        <Link to="/" className="font-semibold tracking-tight">
-          MitBrand
+        <Link to="/" className="font-semibold text-xl tracking-tight">
+          LundAI
         </Link>
 
         {/* Desktop navigation */}

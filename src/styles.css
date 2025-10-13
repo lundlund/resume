@@ -14,7 +14,7 @@
 .btn-ghost{ @apply border border-black/10 hover:border-black/20; }
 
 /* Headings tuned */
-.heading-xl{ @apply text-[clamp(36px,6vw,72px)] leading-[1.05] font-extrabold; letter-spacing:-.01em; }
+.heading-xl{ @apply text-[clamp(36px,6vw,65px)] leading-[1.05] font-extrabold; letter-spacing:-.01em; }
 .heading-lg{ @apply text-4xl font-extrabold; letter-spacing:-.005em; }
 .heading-md{ @apply text-3xl font-extrabold; letter-spacing:-.005em; }
 

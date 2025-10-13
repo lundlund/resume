@@ -6,8 +6,8 @@ import React from "react";
  * (se kommenteret kode længere nede).
  */
 const BRANDS = [
-  "BIRCHBOX", "NIKE", "Jeep", "intel", "Microsoft", "Walgreens", "mazda",
-  "SAMSUNG", "oculus", "T-Mobile", "Walmart", "ULTA",
+  "Louis Nielsen", "Netto", "TDC Koncern", "WebEyes", "Frederikssund Festival", "BSF Fodbold", "DBU",
+  "Dansk Metal",
 ];
 
 type Props = {
