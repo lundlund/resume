@@ -1,10 +1,7 @@
 import React from 'react'
 import Section from '@/components/ui/Section'
-import Heading from '@/components/ui/Heading'
 import Button from '@/components/ui/Button'
-import Card from '@/components/ui/Card'
 import HeroHeadline from '@/components/HeroHeadline'
-import { projects } from '@/data/projects'
 
 export default function Home(){
   return (
@@ -14,7 +11,7 @@ export default function Home(){
           <div>
             <HeroHeadline />
             <div className="mt-8 flex gap-3">
-              <Button as="a" href="/projects">Se projekter</Button>
+              <Button as="a" href="/blog">Se blog</Button>
               <Button as="a" variant="ghost" href="/contact">Kontakt</Button>
             </div>
           </div>
@@ -30,31 +27,7 @@ export default function Home(){
         </div>
       </Section>
 
-      <Section divider>
-        <div className="flex items-end justify-between mb-6">
-          <Heading size="md">Udvalgte projekter</Heading>
-          <a href="/projects" className="underline underline-offset-4">Se alle</a>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.slice(0,6).map((p)=>(
-            <a key={p.id} href={p.url ?? '/projects'} className="group">
-              <Card>
-                <div className="aspect-video overflow-hidden rounded-2xl">
-                  <img
-                    src={p.img}
-                    alt={p.title}
-                    className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform"
-                  />
-                </div>
-                <div className="p-4 flex items-center justify-between">
-                  <h3 className="font-medium">{p.title}</h3>
-                  <span aria-hidden>↗</span>
-                </div>
-              </Card>
-            </a>
-          ))}
-        </div>
-      </Section>
+      
     </main>
   )
 }

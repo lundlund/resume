@@ -1,12 +1,25 @@
+// vite.config.ts
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path'
+import mdx from '@mdx-js/rollup'
+import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    mdx(),        // MDX support (.mdx filer bliver til React-komponenter)
+    react(),      // React Fast Refresh, JSX, osv.
+  ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': fileURLToPath(new URL('./src', import.meta.url)), // import ... from '@/...'
     },
+  },
+  server: {
+    port: 5173,
+    open: false,
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
   },
 })
