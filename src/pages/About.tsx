@@ -1,42 +1,35 @@
-import React from 'react'
-import Section from '@/components/ui/Section'
-import Heading from '@/components/ui/Heading'
-import Card from '@/components/ui/Card'
+import { useTranslation } from "react-i18next";
 
-export default function About(){
+export default function About() {
+  const { t } = useTranslation(); // re-render ved sprogskift
+
   return (
-    <main>
-      <Section>
-        <div className="grid lg:grid-cols-3 gap-12">
-          <div className="lg:col-span-1">
-            <Heading size="lg">Om mig</Heading>
-          </div>
-          <div className="lg:col-span-2">
-            <p className="text-muted leading-relaxed">
-              Jeg er en multidisciplinær designer/udvikler med fokus på simple, stærke brugeroplevelser.
-              Projekter fra corporate identitet til komplekse webapps - altid med sans for detaljer, typografi og performance.
-            </p>
-            <div className="mt-8 grid sm:grid-cols-2 gap-6">
-              <Card className="p-6">
-                <h3 className="font-medium">Kompetencer</h3>
-                <ul className="mt-3 text-sm space-y-1 list-disc pl-5">
-                  <li>UI/UX og design systemer</li>
-                  <li>React, TypeScript, Tailwind</li>
-                  <li>Performance & tilgængelighed</li>
-                </ul>
-              </Card>
-              <Card className="p-6">
-                <h3 className="font-medium">Værktøjer</h3>
-                <ul className="mt-3 text-sm space-y-1 list-disc pl-5">
-                  <li>Figma, Adobe CC</li>
-                  <li>Vite, Framer Motion</li>
-                  <li>Netlify, Vercel</li>
-                </ul>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </Section>
+    <main className="mx-auto max-w-3xl px-4 py-12">
+      <h1 className="text-4xl font-semibold tracking-tight">
+        {t("about.title")}
+      </h1>
+
+      <p className="mt-6 text-lg text-neutral-700 leading-7">
+        {t("about.intro")}
+      </p>
+
+      <section className="mt-8 space-y-3">
+        <h2 className="text-xl font-semibold">{t("about.skillsTitle")}</h2>
+        <ul className="list-disc pl-5 text-neutral-800">
+          <li>{t("about.skills.0")}</li>
+          <li>{t("about.skills.1")}</li>
+          <li>{t("about.skills.2")}</li>
+        </ul>
+      </section>
+
+      <section className="mt-8">
+        <a
+          href="mailto:you@example.com"
+          className="inline-flex items-center rounded-xl border border-neutral-300 px-4 py-2 hover:bg-neutral-50"
+        >
+          {t("about.cta")}
+        </a>
+      </section>
     </main>
-  )
+  );
 }

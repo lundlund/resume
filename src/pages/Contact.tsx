@@ -1,5 +1,6 @@
 // src/pages/Contact.tsx
 import { useState } from "react";
+import { Trans, useTranslation } from "react-i18next";
 import Highlighter from "@/components/Highlighter";
 
 type Status = "idle" | "submitting" | "success" | "error";
@@ -11,6 +12,9 @@ function encode(data: Record<string, string>) {
 }
 
 export default function Contact() {
+  // Hook sørger for re-render ved sprogskift
+  const { t } = useTranslation();
+
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState({
@@ -30,11 +34,19 @@ export default function Contact() {
     setError(null);
 
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
-      setError("Udfyld venligst alle felter.");
+      setError(
+        t("contact.errors.fillAll", {
+          defaultValue: "Udfyld venligst alle felter.",
+        })
+      );
       return;
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-      setError("Indtast en gyldig e-mailadresse.");
+      setError(
+        t("contact.errors.email", {
+          defaultValue: "Indtast en gyldig e-mailadresse.",
+        })
+      );
       return;
     }
 
@@ -59,14 +71,16 @@ export default function Contact() {
       setForm({ name: "", email: "", message: "", "bot-field": "" });
     } catch {
       setStatus("error");
-      setError("Noget gik galt under afsendelse. Prøv igen om lidt.");
+      setError(
+        t("contact.error", {
+          defaultValue: "Noget gik galt under afsendelse. Prøv igen om lidt.",
+        })
+      );
     }
   }
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-12">
-      {/* På desktop fylder rækkerne efter indholdets højde (formen er typisk højest).
-          Vi gør venstre kolonne til flex + items-center + h-full, så teksten står midt i højden. */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
         {/* VENSTRE: vertikalt centreret på desktop */}
         <section
@@ -76,19 +90,26 @@ export default function Contact() {
           <div>
             <h1
               id="contact-hero"
-              className="text-5xl sm:text-5xl md:text-5xl font-semibold leading-[1.05] tracking-tight"
+              className="text-5xl sm:text-5xl md:text-5xl font-semibold leading-[1.05] tracking-tight whitespace-pre-line"
             >
-              Creating <Highlighter>value</Highlighter> across
-              <br />
-              artificial <Highlighter>intelligence</Highlighter> and
-              <br />
-              true <Highlighter>customer</Highlighter> experience.
+              <Trans
+                i18nKey="contact.hero"
+                components={{
+                  hi1: <Highlighter>{""}</Highlighter>,
+                  hi2: <Highlighter>{""}</Highlighter>,
+                  hi3: <Highlighter>{""}</Highlighter>,
+                }}
+                defaults={`Creating <hi1>value</hi1> across
+artificial <hi2>intelligence</hi2> and
+true <hi3>customer</hi3> experience.`}
+              />
             </h1>
 
             <p className="mt-6 text-lg text-neutral-700 leading-7">
-              Jeg omsætter strategi til produkter med kort vej fra idé til
-              prototype—og videre til drift. Fokus på klare mål, brugeroplevelse
-              og målbar effekt.
+              {t("contact.intro", {
+                defaultValue:
+                  "Jeg omsætter strategi til produkter med kort vej fra idé til prototype—og videre til drift. Fokus på klare mål, brugeroplevelse og målbar effekt.",
+              })}
             </p>
 
             <div className="mt-4 flex flex-wrap gap-3">
@@ -96,7 +117,7 @@ export default function Contact() {
                 href="mailto:you@example.com"
                 className="inline-flex items-center rounded-xl border border-neutral-300 px-4 py-2 hover:bg-neutral-50"
               >
-                Email
+                {t("contact.emailCta", { defaultValue: "Email" })}
               </a>
               <a
                 href="https://github.com/ditnavn"
@@ -124,12 +145,14 @@ export default function Contact() {
           className="max-w-md w-full md:justify-self-end"
         >
           <h2 id="contact-form-title" className="sr-only">
-            Kontaktformular
+            {t("contact.formTitle", { defaultValue: "Kontaktformular" })}
           </h2>
 
           {status === "success" && (
             <div className="mb-6 rounded-lg bg-green-50 px-4 py-3 text-green-900">
-              Tak for din besked! Jeg vender tilbage snarest.
+              {t("contact.thanks", {
+                defaultValue: "Tak for din besked! Jeg vender tilbage snarest.",
+              })}
             </div>
           )}
 
@@ -151,7 +174,9 @@ export default function Contact() {
 
             <p className="hidden">
               <label>
-                Lad dette felt stå tomt:{" "}
+                {t("contact.honeypotLabel", {
+                  defaultValue: "Lad dette felt stå tomt:",
+                })}{" "}
                 <input
                   name="bot-field"
                   value={form["bot-field"]}
@@ -163,19 +188,23 @@ export default function Contact() {
             </p>
 
             <label className="block">
-              <span className="text-sm">Navn</span>
+              <span className="text-sm">
+                {t("contact.name", { defaultValue: "Navn" })}
+              </span>
               <input
                 name="name"
                 required
                 value={form.name}
                 onChange={onChange("name")}
                 className="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-neutral-300"
-                placeholder="Dit navn"
+                placeholder={t("contact.namePh", { defaultValue: "Dit navn" })}
               />
             </label>
 
             <label className="block">
-              <span className="text-sm">Email</span>
+              <span className="text-sm">
+                {t("contact.email", { defaultValue: "Email" })}
+              </span>
               <input
                 type="email"
                 name="email"
@@ -183,12 +212,16 @@ export default function Contact() {
                 value={form.email}
                 onChange={onChange("email")}
                 className="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-neutral-300"
-                placeholder="dig@eksempel.dk"
+                placeholder={t("contact.emailPh", {
+                  defaultValue: "dig@eksempel.dk",
+                })}
               />
             </label>
 
             <label className="block">
-              <span className="text-sm">Besked</span>
+              <span className="text-sm">
+                {t("contact.message", { defaultValue: "Besked" })}
+              </span>
               <textarea
                 name="message"
                 required
@@ -196,7 +229,9 @@ export default function Contact() {
                 value={form.message}
                 onChange={onChange("message")}
                 className="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-neutral-300"
-                placeholder="Skriv din besked her…"
+                placeholder={t("contact.messagePh", {
+                  defaultValue: "Skriv din besked her…",
+                })}
               />
             </label>
 
@@ -206,10 +241,15 @@ export default function Contact() {
                 disabled={status === "submitting"}
                 className="inline-flex items-center rounded-xl border border-neutral-300 px-4 py-2 hover:bg-neutral-50 disabled:opacity-60"
               >
-                {status === "submitting" ? "Sender…" : "Send besked"}
+                {status === "submitting"
+                  ? t("cta.sending", { defaultValue: "Sender…" })
+                  : t("cta.send", { defaultValue: "Send besked" })}
               </button>
               <span className="text-sm text-neutral-500">
-                Svarer typisk inden for 24 timer.
+                {t("contact.replyTime", {
+                  hours: 24,
+                  defaultValue: "Svarer typisk inden for 24 timer.",
+                })}
               </span>
             </div>
           </form>

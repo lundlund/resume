@@ -30,5 +30,20 @@
     "thanks": "Tak for din besked! Jeg vender tilbage snarest.",
     "error": "Noget gik galt under afsendelse. Prøv igen om lidt.",
     "replyTime": "Svarer typisk inden for 24 timer."
+  },
+  "about": {
+    "title": "Om mig",
+    "intro": "Jeg designer og bygger digitale produkter med fokus på brugeroplevelse og målbar effekt.",
+    "skillsTitle": "Kompetencer",
+    "skills": ["Strategi og discovery", "UX/UI og prototyper", "Implementering i React + Vite + Tailwind"],
+    "cta": "Kontakt mig"
+  },
+  "projects": {
+    "title": "Udvalgte <hi1>projekter</hi1>",
+    "lead": "Et udvalg af leverede løsninger og <hi>hurtige prototyper</hi>.",
+    "cards": [
+      { "title": "LokalAI Landing", "desc": "Konsulent-site med priskalkulator og Netlify CMS." },
+      { "title": "Talker", "desc": "Privatlivsfokuseret P2P-beskeder med circuit padding." }
+    ]
   }
 }
