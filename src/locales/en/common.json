@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "cta": {
+    "getQuote": "Get a quote",
+    "send": "Send",
+    "sending": "Sending…"
+  },
+   "hero": {
+    "headline": "Creating <hi1>value</hi1> across\n<emlite>artificial</emlite>\nintelligence <emlite>and</emlite>\ntrue <hi2>customer</hi2> experience."
+  },
+
+  "contact": {
+    "title1": "Creating",
+    "title2": "value",
+    "title3": "across",
+    "title4": "artificial",
+    "title5": "intelligence",
+    "title6": "and true",
+    "title7": "customer",
+    "title8": "experience.",
+    "intro": "I turn strategy into products—short path from idea to prototype and into production. Focus on clear goals, UX and measurable impact.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "thanks": "Thanks! I’ll get back to you shortly.",
+    "error": "Something went wrong. Please try again.",
+    "replyTime": "Typically replies within 24 hours."
+  }
+}

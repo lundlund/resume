@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "home": "Forside",
+    "projects": "Projekter",
+    "about": "Om mig",
+    "contact": "Kontakt",
+    "blog": "Blog"
+  },
+    "hero": {
+    "headline": "Skaber <hi1>værdi</hi1> på tværs af\n<emlite>kunstig</emlite>\nintelligens <emlite>og</emlite>\nægte <hi2>kunde</hi2>oplevelser."
+  },
+  "cta": {
+    "getQuote": "Få et tilbud",
+    "send": "Send besked",
+    "sending": "Sender…"
+  },
+  "contact": {
+    "title1": "Skaber",
+    "title2": "værdi",
+    "title3": "på tværs af",
+    "title4": "kunstig",
+    "title5": "intelligens",
+    "title6": "og reel",
+    "title7": "kunde",
+    "title8": "oplevelse.",
+    "intro": "Jeg omsætter strategi til produkter med kort vej fra idé til prototype—og videre til drift. Fokus på klare mål, brugeroplevelse og målbar effekt.",
+    "name": "Navn",
+    "email": "Email",
+    "message": "Besked",
+    "thanks": "Tak for din besked! Jeg vender tilbage snarest.",
+    "error": "Noget gik galt under afsendelse. Prøv igen om lidt.",
+    "replyTime": "Svarer typisk inden for 24 timer."
+  }
+}
