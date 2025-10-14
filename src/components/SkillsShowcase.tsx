@@ -43,7 +43,7 @@ export default function SkillsWithAside() {
           <div className="text-[clamp(10px,5.5vw,24px)] leading-[1.35] font-light">
             <div className="space-y-6">
               {lines.map((line, idx) => (
-                <div key={idx} className="flex flex-wrap justify-start gap-x-6 gap-y-3">
+                <div key={idx} className="flex flex-wrap justify-center gap-x-6 gap-y-3">
                   {line.map((it, i) => {
                     const node = it as Exclude<Item, { br: true }>;
                     return (
