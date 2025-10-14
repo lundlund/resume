@@ -52,11 +52,11 @@
     "budget": {
       "label": "Budget",
       "placeholder": "Vælg budget",
-      "lt10": "<10kr",
-      "lt30": "30kr",
-      "lt50": "50kr",
-      "lt100": "100kr",
-      "gt100": ">100kr"
+      "lt10": "<10.000kr",
+      "lt30": "30.000kr",
+      "lt50": "50.000kr",
+      "lt100": "100.000kr",
+      "gt100": ">100.000kr"
     },
     "org": {
       "label": "Organisationstype",

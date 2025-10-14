@@ -9,7 +9,7 @@
 :root { --sectionY: min(9vw, 120px); }
 
 /* UI atoms */
-.btn{ @apply inline-flex items-center justify-center h-11 px-6 rounded-full text-sm font-semibold transition; }
+.btn{ @apply inline-flex items-center justify-center h-11 px-6 rounded-lg text-sm font-semibold transition; }
 .btn-primary{ @apply bg-ink text-white hover:opacity-90; }
 .btn-ghost{ @apply border border-black/10 hover:border-black/20; }
 
