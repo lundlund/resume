@@ -28,9 +28,16 @@ export default function Topbar() {
       <div className="mx-auto max-w-7xl h-16 flex items-center justify-between px-4">
 
         {/* Brand / logo */}
-        <Link to="/" className="font-semibold text-xl tracking-tight">
-          LundAI
-        </Link>
+       <Link to="/" className="inline-flex items-center" aria-label="LundAI – til forsiden">
+  <img
+    src="/img/lundailogosort.png"
+    alt="LundAI"
+    className="h-9 w-auto"
+    loading="eager"
+    decoding="async"
+  />
+</Link>
+
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center gap-6 text-sm">
