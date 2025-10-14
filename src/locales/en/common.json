@@ -25,26 +25,77 @@
     "sending": "Sending…"
   },
    "hero": {
-    "headline": "Creating <hi1>value</hi1> across\n<emlite>artificial</emlite>\nintelligence <emlite>and</emlite>\ntrue <hi2>customer</hi2> experience."
+    "headline": "Creating <hi1>synergy</hi1> across\n<emlite>artificial</emlite>\nintelligence <emlite>and</emlite>\npractical <hi2>solutions</hi2>."
   },
 
   "contact": {
     "hero": "Creating <hi1>value</hi1> across\n<emlite>artificial</emlite>\nintelligence <emlite>and</emlite>\ntrue <hi3>customer</hi3> experience.",
-    "title1": "Creating",
-    "title2": "value",
-    "title3": "across",
-    "title4": "artificial",
-    "title5": "intelligence",
-    "title6": "and true",
-    "title7": "customer",
-    "title8": "experience.",
-    "intro": "I turn strategy into products—short path from idea to prototype and into production. Focus on clear goals, UX and measurable impact.",
+    "intro": "I turn strategy into products with a short path from idea to prototype—and into production. Focus on clear goals, UX and measurable impact.",
+    "formTitle": "Contact form",
+    "emailCta": "Email",
+    "honeypotLabel": "Leave this field empty:",
     "name": "Name",
+    "namePh": "Your name",
     "email": "Email",
+    "emailPh": "you@example.com",
+    "phone": "Phone number",
+    "phonePh": "+45 12 34 56 78",
     "message": "Message",
-    "thanks": "Thanks! I’ll get back to you shortly.",
-    "error": "Something went wrong. Please try again.",
-    "replyTime": "Typically replies within 24 hours."
+    "messagePh": "Write your message…",
+    "replyTime": "Typically replies within {{hours}} hours.",
+    "thanks": "Thanks for your message! I’ll get back to you shortly.",
+    "error": "Something went wrong while sending. Please try again in a moment.",
+    "errors": {
+      "fillAllBasic": "Please fill in name and email.",
+      "email": "Enter a valid email address.",
+      "solutions": "Select at least one solution."
+    },
+    "budget": {
+      "label": "Budget",
+      "placeholder": "Choose budget",
+      "lt10": "<10k",
+      "lt30": "30k",
+      "lt50": "50k",
+      "lt100": "100k",
+      "gt100": ">100k"
+    },
+    "org": {
+      "label": "Organization type",
+      "placeholder": "Choose type",
+      "business": "Business",
+      "ngo": "Nonprofit",
+      "public": "Public sector",
+      "other": "Other"
+    },
+    "solutions": {
+      "label": "Solutions",
+      "strategy": "AI Strategy",
+      "rag": "Local RAG",
+      "agents": "Custom AI Agents",
+      "onboarding": "Onboarding",
+      "gpt": "GPT Solutions",
+      "training": "Data Training",
+      "hardware": "AI Hardware",
+      "localLlm": "Local LLM Setup"
+    }
+  },
+  "trust": {
+    "gdpr": {
+      "title": "GDPR-compliant",
+      "desc": "Data processing with consent and data minimisation."
+    },
+    "security": {
+      "title": "Security first",
+      "desc": "Encrypted channels and least-privilege principles."
+    },
+    "local": {
+      "title": "Locally anchored",
+      "desc": "Hosting and advisory focused on Denmark/EU."
+    },
+    "netlify": {
+      "title": "Spam-protected",
+      "desc": "Netlify Forms honeypot and server validation."
+    }
   },
   "about": {
     "title": "About me",
