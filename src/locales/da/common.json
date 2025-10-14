@@ -6,12 +6,12 @@
     "contact": "Kontakt",
     "blog": "Blog",
     "open": "Åbn menu",
-  "close": "Luk menu",
-  "title": "Navigation",
-  "book": "Book et møde",
-  "email": "Email"
+    "close": "Luk menu",
+    "title": "Navigation",
+    "book": "Book et møde",
+    "email": "Email"
   },
-    "hero": {
+  "hero": {
     "headline": "Skaber <hi1>værdi</hi1> på tværs af\n<emlite>kunstig</emlite>\nintelligens <emlite>og</emlite>\nægte <hi2>kunde</hi2>oplevelser."
   },
   "home": {
@@ -49,15 +49,52 @@
     "title": "Om mig",
     "intro": "Jeg designer og bygger digitale produkter med fokus på brugeroplevelse og målbar effekt.",
     "skillsTitle": "Kompetencer",
-    "skills": ["Strategi og discovery", "UX/UI og prototyper", "Implementering i React + Vite + Tailwind"],
+    "skills": [
+      "Strategi og discovery",
+      "UX/UI og prototyper",
+      "Implementering i React + Vite + Tailwind"
+    ],
     "cta": "Kontakt mig"
+  },
+  "skills": {
+    "aria": "Kompetenceliste",
+    "items": [
+      { "label": "Content Strategy" },
+      { "label": "Writing", "variant": "dark" },
+      { "br": true },
+      { "label": "Campaign Management", "variant": "light" },
+      { "br": true },
+      { "label": "Branding", "variant": "dark" },
+      { "label": "Social Media" },
+      { "br": true },
+      { "label": "Events Content", "variant": "light" },
+      { "label": "Fundraising", "variant": "dark" },
+      { "br": true },
+      { "label": "Creative Initiatives" }
+    ],
+    "aside": {
+      "title": "Strategi til leveret værdi",
+      "body": "Jeg kombinerer indholdsstrategi, kampagner og branding til løsninger, der kan måles på KPI’er. Hurtige iterationer og tæt samarbejde reducerer vejen fra idé til effekt.",
+      "points": [
+        "Tæt feedback-loop med interessenter",
+        "Klare metrics og læring pr. sprint",
+        "Konsistent brandoplevelse på tværs af kanaler"
+      ],
+      "cta": "Lad os tale om jeres mål"
+    }
   },
   "projects": {
     "title": "Udvalgte <hi1>projekter</hi1>",
     "lead": "Et udvalg af leverede løsninger og <hi>hurtige prototyper</hi>.",
     "cards": [
-      { "title": "LokalAI Landing", "desc": "Konsulent-site med priskalkulator og Netlify CMS." },
-      { "title": "Talker", "desc": "Privatlivsfokuseret P2P-beskeder med circuit padding." }
+      {
+        "title": "LokalAI Landing",
+        "desc": "Konsulent-site med priskalkulator og Netlify CMS."
+      },
+      {
+        "title": "Talker",
+        "desc": "Privatlivsfokuseret P2P-beskeder med circuit padding."
+      }
     ]
   }
 }

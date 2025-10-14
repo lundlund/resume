@@ -4,6 +4,7 @@ import Button from "@/components/ui/Button";
 import HeroHeadline from "@/components/HeroHeadline";
 import BrandCloud from "@/components/BrandCloud";
 import { useTranslation } from "react-i18next";
+import SkillsShowcase from "@/components/SkillsShowcase";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -31,6 +32,7 @@ export default function Home() {
           </div>
         </div>
       </Section>
+       <SkillsShowcase />
 
       {/* BrandCloud i bunden – tekst via i18n */}
       <BrandCloud

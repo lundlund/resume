@@ -22,3 +22,9 @@
 .text-muted{ color: rgba(17,17,19,.72); }
 
 .card{ @apply rounded-2xl bg-white border border-black/5 shadow-card; }
+
+/* src/styles.css */
+.no-sectionY { --sectionY: 0; }
+.tight-sectionY { --sectionY: 32px; }
+.loose-sectionY { --sectionY: 120px; }
+

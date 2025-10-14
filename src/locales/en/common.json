@@ -53,6 +53,34 @@
     "skills": ["Strategy and discovery", "UX/UI and prototypes", "Implementation in React + Vite + Tailwind"],
     "cta": "Get in touch"
   },
+  "skills": {
+    "aria": "Skills list",
+    "items": [
+      { "label": "Content Strategy" },
+      { "label": "Writing", "variant": "dark" },
+      { "br": true },
+      { "label": "Campaign Management", "variant": "light" },
+      { "br": true },
+      { "label": "Branding", "variant": "dark" },
+      { "label": "Social Media" },
+      { "br": true },
+      { "label": "Events Content", "variant": "light" },
+      { "label": "Fundraising", "variant": "dark" },
+      { "br": true },
+      { "label": "Creative Initiatives" }
+    ],
+    "aside": {
+      "title": "Strategy into delivered value",
+      "body": "I combine content strategy, campaigns and branding into KPI-driven outcomes. Fast iteration and close collaboration shorten the path from idea to impact.",
+      "points": [
+        "Tight feedback loop with stakeholders",
+        "Clear metrics and per-sprint learning",
+        "Consistent brand experience across channels"
+      ],
+      "cta": "Let’s talk about your goals"
+    }
+  }
+,
   "projects": {
     "title": "Selected <hi1>projects</hi1>",
     "lead": "A selection of shipped work and <hi>rapid prototypes</hi>.",
