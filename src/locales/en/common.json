@@ -56,18 +56,18 @@
   "skills": {
     "aria": "Skills list",
     "items": [
-      { "label": "Content Strategy" },
-      { "label": "Writing", "variant": "dark" },
+      { "label": "AI Strategy" },
+      { "label": "Local RAG", "variant": "dark" },
       { "br": true },
-      { "label": "Campaign Management", "variant": "light" },
+      { "label": "Custom AI Agents", "variant": "light" },
       { "br": true },
-      { "label": "Branding", "variant": "dark" },
-      { "label": "Social Media" },
+      { "label": "Onboarding", "variant": "dark" },
+      { "label": "GPT Solutions" },
       { "br": true },
-      { "label": "Events Content", "variant": "light" },
-      { "label": "Fundraising", "variant": "dark" },
+      { "label": "Data Training", "variant": "light" },
+      { "label": "AI Hardware", "variant": "dark" },
       { "br": true },
-      { "label": "Creative Initiatives" }
+      { "label": "Local LLM Installations" }
     ],
     "aside": {
       "title": "Strategy into delivered value",

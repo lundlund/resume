@@ -12,7 +12,7 @@
     "email": "Email"
   },
   "hero": {
-    "headline": "Skaber <hi1>værdi</hi1> på tværs af\n<emlite>kunstig</emlite>\nintelligens <emlite>og</emlite>\nægte <hi2>kunde</hi2>oplevelser."
+    "headline": "Bygger <hi1>broer</hi1> <emlite>på</emlite> tværs af\n<emlite>kunstig</emlite>\nintelligens <emlite>og</emlite>\n <hi2>realiserbare</hi2>løsninger."
   },
   "home": {
     "cta": {
@@ -59,18 +59,18 @@
   "skills": {
     "aria": "Kompetenceliste",
     "items": [
-      { "label": "Content Strategy" },
-      { "label": "Writing", "variant": "dark" },
+      { "label": "AI Strategi" },
+      { "label": "Lokal RAG", "variant": "dark" },
       { "br": true },
-      { "label": "Campaign Management", "variant": "light" },
+      { "label": "Tilpassede AI Agenter", "variant": "light" },
       { "br": true },
-      { "label": "Branding", "variant": "dark" },
-      { "label": "Social Media" },
+      { "label": "Onboarding", "variant": "dark" },
+      { "label": "GPT Løsninger" },
       { "br": true },
-      { "label": "Events Content", "variant": "light" },
-      { "label": "Fundraising", "variant": "dark" },
+      { "label": "Data Træning", "variant": "light" },
+      { "label": "AI Hardware", "variant": "dark" },
       { "br": true },
-      { "label": "Creative Initiatives" }
+      { "label": "Lokal LLM Opsætning" }
     ],
     "aside": {
       "title": "Strategi til leveret værdi",
