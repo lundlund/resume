@@ -1,0 +1,9 @@
+{"projects": {
+    "title": "Selected <hi1>projects</hi1>",
+    "lead": "A selection of shipped work and <hi>rapid prototypes</hi>.",
+    "cards": [
+      { "title": "LokalAI Landing", "desc": "Consultancy landing with pricing calculator and Netlify CMS." },
+      { "title": "Talker", "desc": "Privacy-first P2P messaging with circuit padding." }
+    ]
+  }
+}

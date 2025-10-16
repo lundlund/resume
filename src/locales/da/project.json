@@ -1,0 +1,15 @@
+{"projects": {
+    "title": "Udvalgte <hi1>projekter</hi1>",
+    "lead": "Et udvalg af leverede løsninger og <hi>hurtige prototyper</hi>.",
+    "cards": [
+      {
+        "title": "LokalAI Landing",
+        "desc": "Konsulent-site med priskalkulator og Netlify CMS."
+      },
+      {
+        "title": "Talker",
+        "desc": "Privatlivsfokuseret P2P-beskeder med circuit padding."
+      }
+    ]
+  }
+}

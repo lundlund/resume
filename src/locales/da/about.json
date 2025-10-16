@@ -1,0 +1,12 @@
+{"about": {
+    "title": "Om mig",
+    "intro": "Jeg designer og bygger digitale produkter med fokus på brugeroplevelse og målbar effekt.",
+    "skillsTitle": "Kompetencer",
+    "skills": [
+      "Strategi og discovery",
+      "UX/UI og prototyper",
+      "Implementering i React + Vite + Tailwind"
+    ],
+    "cta": "Kontakt mig"
+  }
+}
