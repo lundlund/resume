@@ -25,7 +25,7 @@
     "sending": "Sending…"
   },
    "hero": {
-    "headline": "Creating <hi1>synergy</hi1> across\n<emlite>artificial</emlite>\nintelligence <emlite>and</emlite>\npractical <hi2>solutions</hi2>."
+    "headline": "<emlite>I</emlite> create <hi1>synergy</hi1> across <emlite>artificial</emlite>\nintelligence <emlite>and</emlite>\npractical <hi2>solutions</hi2>."
   },
 
   "contact": {
@@ -121,12 +121,12 @@
       { "label": "Local LLM Installations" }
     ],
     "aside": {
-      "title": "Strategy into delivered value",
-      "body": "I combine content strategy, campaigns and branding into KPI-driven outcomes. Fast iteration and close collaboration shorten the path from idea to impact.",
+      "title": "From Complex AI to Real Value",
+      "body": "I help companies get started with AI – without the technical noise. From setting up GPTs and local LLMs to advising on how to use AI effectively in daily operations. With me, you get solutions that actually work in practice – not just on paper.",
       "points": [
-        "Tight feedback loop with stakeholders",
-        "Clear metrics and per-sprint learning",
-        "Consistent brand experience across channels"
+        "Setup and customization of GPTs and LLM models",
+        "Guidance on how to integrate and use AI in your existing workflows",
+        "Focus on value, security, and usability – not buzzwords"
       ],
       "cta": "Let’s talk about your goals"
     }

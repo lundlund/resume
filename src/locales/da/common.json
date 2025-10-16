@@ -12,7 +12,7 @@
     "email": "Email"
   },
   "hero": {
-    "headline": "Skaber <hi1>synergi</hi1> <emlite>på</emlite> tværs af\n<emlite>kunstig</emlite>\nintelligens <emlite>og</emlite>\n <hi2>praktiske</hi2>løsninger."
+    "headline": "<emlite>Jeg</emlite> skaber <hi1>synergi</hi1> <emlite>på</emlite> tværs af <emlite>kunstig</emlite>\nintelligens <emlite>og</emlite>\n <hi2>praktiske</hi2>løsninger."
   },
   "home": {
     "cta": {
@@ -125,12 +125,12 @@
       { "label": "Lokal LLM Opsætning" }
     ],
     "aside": {
-      "title": "Strategi til leveret værdi",
-      "body": "Jeg kombinerer indholdsstrategi, kampagner og branding til løsninger, der kan måles på KPI’er. Hurtige iterationer og tæt samarbejde reducerer vejen fra idé til effekt.",
+      "title": "Fra kompleks AI til reel værdi",
+      "body": "Jeg hjælper virksomheder med at komme i gang med AI – uden teknisk støj. Fra opsætning af GPT’er og lokale LLM’er til rådgivning om, hvordan AI bedst bruges i daglig drift. Med mig får I løsninger, der virker i praksis, ikke bare på papiret.",
       "points": [
-        "Tæt feedback-loop med interessenter",
-        "Klare metrics og læring pr. sprint",
-        "Konsistent brandoplevelse på tværs af kanaler"
+        "Opsætning og tilpasning af GPT’er og LLM-modeller",
+        "Hjælp til at forstå og bruge AI i jeres eksisterende arbejdsflow",
+        "Fokus på værdi, sikkerhed og brugervenlighed – ikke buzzwords"
       ],
       "cta": "Lad os tale om jeres mål"
     }
