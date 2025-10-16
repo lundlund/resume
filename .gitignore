@@ -1,42 +1,46 @@
-# Node dependencies
+# --- Suggested additions below ---
+# Node & package managers
 node_modules/
-
-# Build output
-dist/
-build/
-
-# Local environment files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Vite cache
-.vite/
-vite.config.ts.timestamp*
-
-# Editor directories and files
-.idea/
-.vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+.pnpm-store/
 
-# Mac and system files
+# Env files
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist/
+build/
+.vite/
+storybook-static/
+coverage/
+out/
+.vercel/
+.netlify/
+
+# Tooling caches
+.eslintcache
+.parcel-cache/
+.cache/
+.turbo/
+.swc/
+.tsbuildinfo
+
+# OS & IDE
 .DS_Store
 Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
 
-# TypeScript cache
-*.tsbuildinfo
-
-# Optional: if you use testing or coverage tools
-coverage/
+# E2E artifacts
+cypress/screenshots/
+cypress/videos/
+playwright-report/
+test-results/
