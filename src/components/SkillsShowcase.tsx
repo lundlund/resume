@@ -88,7 +88,7 @@ export default function SkillsWithAside() {
               href="/contact"
               className="inline-flex items-center rounded-xl border border-neutral-300 px-5 py-2.5 hover:bg-neutral-50"
             >
-              {t("skills.aside.cta", { defaultValue: "Lad os tale om jeres mål" })}
+              {t("skills.aside.cta", { defaultValue: "Lad os arbejde sammen" })}
             </a>
           </div>
         </aside>

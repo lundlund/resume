@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Highlighter from "@/components/Highlighter";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const links = {
   primary: [
@@ -37,7 +38,7 @@ export function Footer() {
               id="footer-cta"
               className="text-2xl md:text-3xl font-semibold tracking-tight"
             >
-              <Highlighter>Klar til at bruge AI rigtigt?</Highlighter>
+              Klar til at bruge <Highlighter>AI rigtigt?</Highlighter>
             </h2>
             <p className="mt-3 text-sm text-black/60 dark:text-black/60">
               Jeg sætter jeres GPT’er og lokale LLM’er op, finjusterer prompts
@@ -45,11 +46,11 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="flex flex-row items-stretch gap-3">
+          <div className="flex flex-row gap-3 justify-center sm:justify-start items-center">
             <Link
               to="/contact"
               className="
-      inline-flex flex-1 items-center justify-center
+      inline-flex items-center justify-center shrink-0 whitespace-nowrap
       rounded-md px-4 h-11 text-sm font-medium
       bg-black text-white
       ring-1 ring-black/10 hover:brightness-95 transition
@@ -61,7 +62,7 @@ export function Footer() {
             <a
               href="/cv.pdf"
               className="
-      inline-flex flex-1 items-center justify-center
+      inline-flex items-center justify-center shrink-0 whitespace-nowrap
       rounded-xl px-4 h-11 text-sm
       ring-1 ring-black/10 dark:ring-white/10
       hover:bg-black/5 dark:hover:bg-white/5 transition
@@ -117,26 +118,9 @@ export function Footer() {
             <p className="text-black/70 dark:text-black/70">
               København, Danmark
               <br />
-              <a
-                className="underline underline-offset-4 hover:opacity-80"
-                href="mailto:dennis@lundai.dk"
-              >
-                support@lundai.dk
-              </a>
             </p>
-
-            <button
-              onClick={() =>
-                i18n.changeLanguage(i18n.language === "da" ? "en" : "da")
-              }
-              className="
-                mt-4 inline-flex items-center gap-2 rounded-lg px-3 h-9
-                text-xs ring-1 ring-black/10 dark:ring-white/10
-                hover:bg-black/5 dark:hover:bg-white/5 transition
-              "
-            >
-              Skift sprog
-            </button>
+            <br />
+            <LanguageSwitcher />
           </div>
         </div>
       </section>
