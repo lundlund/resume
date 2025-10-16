@@ -1,26 +1,15 @@
-# --- Suggested additions below ---
-# Node & package managers
+# Node dependencies
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
 .pnpm-store/
 
-# Env files
-.env
-.env.*
-!.env.example
-
-# Build outputs
+# Build output
 dist/
 build/
-.vite/
-storybook-static/
-coverage/
 out/
-.vercel/
-.netlify/
+
+# Vite cache
+.vite/
+vite.config.ts.timestamp*
 
 # Tooling caches
 .eslintcache
@@ -28,9 +17,24 @@ out/
 .cache/
 .turbo/
 .swc/
-.tsbuildinfo
+*.tsbuildinfo
 
-# OS & IDE
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Hosting/platform
+.netlify/
+.vercel/
+
+# Editors & OS
 .DS_Store
 Thumbs.db
 .idea/
@@ -39,7 +43,8 @@ Thumbs.db
 !.vscode/settings.json
 !.vscode/tasks.json
 
-# E2E artifacts
+# Test/coverage artifacts
+coverage/
 cypress/screenshots/
 cypress/videos/
 playwright-report/
