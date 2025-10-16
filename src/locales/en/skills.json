@@ -1,0 +1,28 @@
+{"skills": {
+    "aria": "Skills list",
+    "items": [
+      { "label": "AI Strategy" },
+      { "label": "Local RAG", "variant": "dark" },
+      { "br": true },
+      { "label": "Custom AI Agents", "variant": "light" },
+      { "br": true },
+      { "label": "Onboarding", "variant": "dark" },
+      { "label": "GPT Solutions" },
+      { "br": true },
+      { "label": "Data Training", "variant": "light" },
+      { "label": "AI Hardware", "variant": "dark" },
+      { "br": true },
+      { "label": "Local LLM Installations" }
+    ],
+    "aside": {
+      "title": "From Complex AI to Real Value",
+      "body": "I help companies get started with AI – without the technical noise. From setting up GPTs and local LLMs to advising on how to use AI effectively in daily operations. With me, you get solutions that actually work in practice – not just on paper.",
+      "points": [
+        "Setup and customization of GPTs and LLM models",
+        "Guidance on how to integrate and use AI in your existing workflows",
+        "Focus on value, security, and usability – not buzzwords"
+      ],
+      "cta": "Let’s work together"
+    }
+  }
+}

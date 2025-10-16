@@ -1,0 +1,53 @@
+{
+    "contact": {
+    "hero": "Skaber <hi1>værdi</hi1> på tværs af\n<emlite>kunstig</emlite>\nintelligens <emlite>og</emlite>\nægte <hi3>kunde</hi3>oplevelser.",
+    "intro": "Jeg omsætter strategi til produkter med kort vej fra idé til prototype—og videre til drift. Fokus på klare mål, brugeroplevelse og målbar effekt.",
+    "formTitle": "Kontaktformular",
+    "emailCta": "Email",
+    "honeypotLabel": "Lad dette felt stå tomt:",
+    "name": "Navn",
+    "namePh": "Dit navn",
+    "email": "Email",
+    "emailPh": "dig@eksempel.dk",
+    "phone": "Telefonnummer",
+    "phonePh": "+45 12 34 56 78",
+    "message": "Besked",
+    "messagePh": "Skriv din besked her…",
+    "replyTime": "Svarer typisk inden for {{hours}} timer.",
+    "thanks": "Tak for din besked! Jeg vender tilbage snarest.",
+    "error": "Noget gik galt under afsendelse. Prøv igen om lidt.",
+    "errors": {
+      "fillAllBasic": "Udfyld venligst navn og email.",
+      "email": "Indtast en gyldig e-mailadresse.",
+      "solutions": "Vælg mindst én løsning."
+    },
+    "budget": {
+      "label": "Budget",
+      "placeholder": "Vælg budget",
+      "lt10": "<10.000kr",
+      "lt30": "30.000kr",
+      "lt50": "50.000kr",
+      "lt100": "100.000kr",
+      "gt100": ">100.000kr"
+    },
+    "org": {
+      "label": "Organisationstype",
+      "placeholder": "Vælg type",
+      "business": "Virksomhed",
+      "ngo": "Forening",
+      "public": "Offentlig",
+      "other": "Andet"
+    },
+    "solutions": {
+      "label": "Løsninger",
+      "strategy": "AI Strategi",
+      "rag": "Lokal RAG",
+      "agents": "Tilpassede AI Agenter",
+      "onboarding": "Onboarding",
+      "gpt": "GPT Løsninger",
+      "training": "Data Træning",
+      "hardware": "AI Hardware",
+      "localLlm": "Lokal LLM Opsætning"
+    }
+}
+}

@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Forside",
+    "projects": "Projekter",
+    "about": "Om mig",
+    "contact": "Kontakt",
+    "blog": "Blog",
+    "open": "Åbn menu",
+    "close": "Luk menu",
+    "title": "Navigation",
+    "book": "Book et møde",
+    "email": "Email"
+  }
+}

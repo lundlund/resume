@@ -1,0 +1,20 @@
+{
+    "trust": {
+    "gdpr": {
+      "title": "GDPR-kompatibel",
+      "desc": "Databehandling med samtykke og mindst mulige data."
+    },
+    "security": {
+      "title": "Sikkerhed først",
+      "desc": "Krypterede kanaler, principper om mindst privilegium."
+    },
+    "local": {
+      "title": "Lokalt forankret",
+      "desc": "Hosting og rådgivning med fokus på Danmark/EU."
+    },
+    "netlify": {
+      "title": "Spam-beskyttet",
+      "desc": "Netlify Forms honeypot og server-validering."
+    }
+}
+}

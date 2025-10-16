@@ -1,0 +1,52 @@
+{"contact": {
+    "hero": "Creating <hi1>value</hi1> across\n<emlite>artificial</emlite>\nintelligence <emlite>and</emlite>\ntrue <hi3>customer</hi3> experience.",
+    "intro": "I turn strategy into products with a short path from idea to prototype—and into production. Focus on clear goals, UX and measurable impact.",
+    "formTitle": "Contact form",
+    "emailCta": "Email",
+    "honeypotLabel": "Leave this field empty:",
+    "name": "Name",
+    "namePh": "Your name",
+    "email": "Email",
+    "emailPh": "you@example.com",
+    "phone": "Phone number",
+    "phonePh": "+45 12 34 56 78",
+    "message": "Message",
+    "messagePh": "Write your message…",
+    "replyTime": "Typically replies within {{hours}} hours.",
+    "thanks": "Thanks for your message! I’ll get back to you shortly.",
+    "error": "Something went wrong while sending. Please try again in a moment.",
+    "errors": {
+      "fillAllBasic": "Please fill in name and email.",
+      "email": "Enter a valid email address.",
+      "solutions": "Select at least one solution."
+    },
+    "budget": {
+      "label": "Budget",
+      "placeholder": "Choose budget",
+      "lt10": "<10k",
+      "lt30": "30k",
+      "lt50": "50k",
+      "lt100": "100k",
+      "gt100": ">100k"
+    },
+    "org": {
+      "label": "Organization type",
+      "placeholder": "Choose type",
+      "business": "Business",
+      "ngo": "Nonprofit",
+      "public": "Public sector",
+      "other": "Other"
+    },
+    "solutions": {
+      "label": "Solutions",
+      "strategy": "AI Strategy",
+      "rag": "Local RAG",
+      "agents": "Custom AI Agents",
+      "onboarding": "Onboarding",
+      "gpt": "GPT Solutions",
+      "training": "Data Training",
+      "hardware": "AI Hardware",
+      "localLlm": "Local LLM Setup"
+    }
+  }
+}

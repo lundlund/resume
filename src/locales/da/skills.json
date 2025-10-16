@@ -1,0 +1,28 @@
+{"skills": {
+    "aria": "Kompetenceliste",
+    "items": [
+      { "label": "AI Strategi" },
+      { "label": "Lokal RAG", "variant": "dark" },
+      { "br": true },
+      { "label": "Tilpassede AI Agenter", "variant": "light" },
+      { "br": true },
+      { "label": "Onboarding", "variant": "dark" },
+      { "label": "GPT Løsninger" },
+      { "br": true },
+      { "label": "Data Træning", "variant": "light" },
+      { "label": "AI Hardware", "variant": "dark" },
+      { "br": true },
+      { "label": "Lokal LLM Opsætning" }
+    ],
+    "aside": {
+      "title": "Fra kompleks AI til reel værdi",
+      "body": "Jeg hjælper virksomheder med at komme i gang med AI – uden teknisk støj. Fra opsætning af GPT’er og lokale LLM’er til rådgivning om, hvordan AI bedst bruges i daglig drift. Med mig får I løsninger, der virker i praksis, ikke bare på papiret.",
+      "points": [
+        "Opsætning og tilpasning af GPT’er og LLM-modeller",
+        "Hjælp til at forstå og bruge AI i jeres eksisterende arbejdsflow",
+        "Fokus på værdi, sikkerhed og brugervenlighed – ikke buzzwords"
+      ],
+      "cta": "Lad os arbejde sammen"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{"about": {
+    "title": "About me",
+    "intro": "I design and build digital products focused on UX and measurable impact.",
+    "skillsTitle": "Skills",
+    "skills": ["Strategy and discovery", "UX/UI and prototypes", "Implementation in React + Vite + Tailwind"],
+    "cta": "Get in touch"
+  }
+}
